@@ -1,0 +1,47 @@
+body {
+  background-image: url(../images/stars.jpg);
+  margin: 0;
+  overflow-y: scroll;
+}
+
+.nav-div {
+  grid-row-start: 1;
+  background-image: url(../images/stars.jpg);
+}
+
+nav {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 1em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  font-style: italic;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  -webkit-text-stroke: 1px black;
+}
+
+.active {
+  color: rgb(212, 215, 126);
+}
+
+@media (max-width: 480px) {
+  nav {
+    font-size: large;
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    font-size: large;
+    max-width: 768px;
+  }
+}

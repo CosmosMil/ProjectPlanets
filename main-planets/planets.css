@@ -1,0 +1,67 @@
+#mainbox {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-rows: 2em 1fr;
+  overflow-y: scroll;
+  min-width: 0;
+}
+
+#card-container {
+  grid-row-start: 2;
+  width: 100%;
+  padding: 3em;
+}
+
+#planet-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  padding: 3em;
+}
+
+.card {
+  background-color: goldenrod;
+}
+
+select {
+  background-color: rgb(212, 215, 126);
+  padding: 1em;
+}
+
+option {
+  background-color: goldenrod;
+}
+
+h5 {
+  font-family: "Bonk Robbers";
+  color: rgb(62, 62, 207);
+  font-size: x-large;
+  padding: 1em;
+}
+
+ul {
+  list-style-type: none;
+  font-size: large;
+  font-family: "Bonk Robbers";
+  line-height: 2em;
+}
+
+@media (max-width: 480px) {
+  h5 {
+    font-size: large;
+  }
+  ul {
+    font-size: small;
+  }
+}
+
+@media (max-width: 768px) {
+  h5 {
+    font-size: large;
+  }
+  ul {
+    font-size: medium;
+  }
+}
